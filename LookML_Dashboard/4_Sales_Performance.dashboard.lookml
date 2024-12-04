@@ -1,5 +1,5 @@
 - dashboard: sap_order_to_cash_o2c_04_sales_performanceperformance_tuning
-  title: "<font color=\"#005EA3\">Sales Performance <font color=\"#E90E8B\">11Solutions"
+  title: "Sales Performance 11Solutions "
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
@@ -7,8 +7,8 @@
   elements:
   - name: Sales Performance
     type: text
-    title_text: Sales Performance
-    subtitle_text: "<font color=\"#c1c1c1\">How are my Sales performing ?\t</font>"
+    title_text: Rendimiento de Ventas
+    subtitle_text: "<font color=\"#c1c1c1\">¿Cómo están rindiendo mis ventas?\t</font>"
     body_text: ''
     row: 2
     col: 0

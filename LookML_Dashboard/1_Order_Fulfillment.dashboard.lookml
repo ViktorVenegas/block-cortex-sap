@@ -1,5 +1,5 @@
 - dashboard: sap_order_to_cash_02c_01_order_fulfillment_performance_tuning
-  title: "Sales Order Fulfillment"
+  title: "Cumplimiento de Pedido de Venta"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
@@ -7,7 +7,7 @@
   elements:
   - name: Order Fulfillment
     type: text
-    title_text: Order Fulfillment
+    title_text: Cumplimiento de Pedido
     subtitle_text: "<font color=\"#c1c1c1\">How is my Delivery Performance?\t</font>"
     body_text: ''
     row: 2
