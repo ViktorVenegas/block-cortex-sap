@@ -1,5 +1,5 @@
 - dashboard: sap_order_to_cash_o2c_04_sales_performanceperformance_tuning
-  title: "Sales Performance 11Solutions"
+  title: "<font-weight= \"bold\"> <font color=\"#005EA3\">Sales Performance <font color=\"#E90E8B\">11Solutions"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
