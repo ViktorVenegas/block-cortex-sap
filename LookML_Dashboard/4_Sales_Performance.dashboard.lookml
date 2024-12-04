@@ -1,5 +1,5 @@
 - dashboard: sap_order_to_cash_o2c_04_sales_performanceperformance_tuning
-  title: "Sales Performance"
+  title: "Sales Performance 11Solutions"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
@@ -14,7 +14,7 @@
     col: 0
     width: 24
     height: 1
-  - title: Sales Performance by Top 10 Products
+  - title: Rendimiento de Ventas para el Top 10 de productos
     name: Sales Performance by Top 10 Products
     model: cortex_sap_operational
     explore: sales_orders
@@ -77,7 +77,7 @@
     col: 0
     width: 24
     height: 6
-  - title: Sales Performance by Top 5 Sales Org
+  - title: Rendimiento de Ventas por el Top 5 de Organizaciones de Ventas
     name: Sales Performance by Top 5 Sales Org
     model: cortex_sap_operational
     explore: sales_orders
@@ -140,7 +140,7 @@
     col: 0
     width: 24
     height: 6
-  - title: Sales Performance by Distribution Channel
+  - title: Rendimiento de Ventas por Canal de Distribución
     name: Sales Performance by Distribution Channel
     model: cortex_sap_operational
     explore: sales_orders
@@ -215,7 +215,7 @@
     col: 0
     width: 12
     height: 6
-  - title: Sales Performance by Division
+  - title: Rendimiento de Ventas por División
     name: Sales Performance by Division
     model: cortex_sap_operational
     explore: sales_orders
@@ -257,7 +257,7 @@
     col: 12
     width: 12
     height: 6
-  - title: Total Customers
+  - title: Total de Clientes
     name: Total Customers
     model: cortex_sap_operational
     explore: sales_orders
@@ -300,7 +300,7 @@
     col: 0
     width: 4
     height: 7
-  - title: Avg Sales of Top 10 Customers
+  - title: Promedio de Ventas del Top 10 de Clientes
     name: Avg Sales of Top 10 Customers
     model: cortex_sap_operational
     explore: sales_orders
@@ -363,7 +363,7 @@
     col: 4
     width: 10
     height: 7
-  - title: Avg Sales of Top 10 Products
+  - title: Promedio de Ventas del Top 10 de Productos
     name: Avg Sales of Top 10 Products
     model: cortex_sap_operational
     explore: sales_orders
