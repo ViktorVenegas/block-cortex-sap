@@ -282,6 +282,19 @@ explore: inventory_by_plant {
   }
 }
 
+################################################ Amount per seller Explore de Prueba #################################################
+explore: +vendor_performance {
+    query: amount_per_seller_us {
+      dimensions: [Invoice_date_month, country_key_land1, name1]
+      measures: [sum_invoice_amount_in_target_currency]
+      filters: [
+        vendor_performance.Invoice_date_year: "2022",
+        vendor_performance.country_key_land1: "US"
+      ]
+    }
+}
+
+
 
 ################################################ End of Supply Chain #################################################
 
