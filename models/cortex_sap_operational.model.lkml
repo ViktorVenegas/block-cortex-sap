@@ -294,6 +294,26 @@ explore: +vendor_performance {
     }
 }
 
+explore: countries_md {
+  sql_always_where: ${countries_md.client_mandt} = '{{ _user_attributes['client_id_rep'] }}'
+        and ${language_map.looker_locale}='{{ _user_attributes['locale'] }}'
+    ;;
+
+    join: language_map {
+      fields: []
+      type: left_outer
+      sql_on: ${countries_md.language_spras} = ${language_map.language_key} ;;
+      relationship: many_to_one
+    }
+}
+
+# explore: +vendor_performance {
+#   join: vendor_performance {
+#     type: left_outer
+#     relationship: many_to_one
+#     sql_on: ${vendor_performance.country_key_land1}=${countries} ;;
+#   }
+# }
 
 
 ################################################ End of Supply Chain #################################################
