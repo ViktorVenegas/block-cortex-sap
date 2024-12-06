@@ -1,6 +1,6 @@
 ---
 - dashboard: amount_invoice_us
-  title: Monto de Facturas en US
+  title: Monto Facturas US
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
