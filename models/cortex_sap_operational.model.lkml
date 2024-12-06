@@ -5,6 +5,7 @@ connection: "@{CONNECTION_NAME}"
 include: "/views/**/*.view"
 include: "/components/*.lkml"
 include: "/explores_finance/*.explore"
+include: "/LookML_Dashboard/amount_invoice_us.dashboard"
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
