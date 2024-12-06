@@ -307,14 +307,6 @@ explore: countries_md {
     }
 }
 
-# explore: +vendor_performance {
-#   join: vendor_performance {
-#     type: left_outer
-#     relationship: many_to_one
-#     sql_on: ${vendor_performance.country_key_land1}=${countries} ;;
-#   }
-# }
-
 
 ################################################ End of Supply Chain #################################################
 
