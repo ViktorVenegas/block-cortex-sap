@@ -282,6 +282,7 @@ explore: inventory_by_plant {
   }
 }
 
+
 ################################################ End of Supply Chain #################################################
 
 explore: global_currency_list_pdt {
