@@ -5,6 +5,15 @@
   description: ''
   preferred_slug: FM7SdAo1feuXPacg2v6aZh
   elements:
+  - name: Sales Performance Image
+    type: text
+    title_text: "<b>Imagen Representativa</b>"
+    body_text: "<img src='https://leadsbridge.com/wp-content/themes/leadsbridge/img/integration-lg-logos/logo1025.png' alt='Sales Performance' width='100px' height='100px' />"
+    row: 0
+    col: 0
+    width: 10
+    height: 4
+
   - name: Sales Performance
     type: text
     title_text: Rendimiento de Ventas

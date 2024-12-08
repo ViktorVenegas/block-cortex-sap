@@ -5,6 +5,7 @@ connection: "@{CONNECTION_NAME}"
 include: "/views/**/*.view"
 include: "/components/*.lkml"
 include: "/explores_finance/*.explore"
+include: "/LookML_Dashboard/amount_invoice_us.dashboard"
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
@@ -281,6 +282,32 @@ explore: inventory_by_plant {
     relationship: many_to_one
   }
 }
+
+################################################ Amount per seller Explore de Prueba #################################################
+explore: +vendor_performance {
+    query: amount_per_seller_us {
+      dimensions: [Invoice_date_month, country_key_land1, name1]
+      measures: [sum_invoice_amount_in_target_currency]
+      filters: [
+        vendor_performance.Invoice_date_year: "2022",
+        vendor_performance.country_key_land1: "US"
+      ]
+    }
+}
+
+explore: countries_md {
+  sql_always_where: ${countries_md.client_mandt} = '{{ _user_attributes['client_id_rep'] }}'
+        and ${language_map.looker_locale}='{{ _user_attributes['locale'] }}'
+    ;;
+
+    join: language_map {
+      fields: []
+      type: left_outer
+      sql_on: ${countries_md.language_spras} = ${language_map.language_key} ;;
+      relationship: many_to_one
+    }
+}
+
 
 ################################################ End of Supply Chain #################################################
 
