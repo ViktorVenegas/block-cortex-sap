@@ -5,6 +5,16 @@
   description: ''
   preferred_slug: VMRXJW8ou8ax9tT9Eiuyof
   elements:
+  - title: "Header Image"
+    name: header_image
+    type: text
+    title_text: ''
+    subtitle_text: ''
+    body_text: '<div style="text-align: center;"><img src="https://11solutions.cl/wp-content/uploads/2024/07/SOLUTIONS_LOGO_PRINCIPAL-e1720536678920-1024x680.png" alt="Encabezado" style="width: 10%; max-height: 40px;"></div>'
+    row: 0
+    col: 0
+    width: 24
+    height: 2
   - name: Customer focused Price Variations
     type: text
     title_text: Customer focused Price Variations
