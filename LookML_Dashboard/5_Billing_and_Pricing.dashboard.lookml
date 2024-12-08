@@ -8,9 +8,8 @@
   - name: Customer focused Price Variations
     type: text
     title_text: Customer focused Price Variations
-    subtitle_text: <font color="#c1c1c1"> How can Customers benefit from Price Adjustments
-      ?</font>
-    body_text: "<img src='https://11solutions.cl/wp-content/uploads/2024/07/SOLUTIONS_LOGO_PRINCIPAL-e1720536678920-1024x680.png' alt='Sales Performance' width='100%' />"
+
+    body_text: "<img src='https://11solutions.cl/wp-content/uploads/2024/07/SOLUTIONS_LOGO_PRINCIPAL-e1720536678920-1024x680.png' alt='Sales Performance' width='20%' height='20px' />"
     row: 2
     col: 0
     width: 24
