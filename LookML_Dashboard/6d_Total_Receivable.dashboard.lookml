@@ -4,6 +4,13 @@
   preferred_viewer: dashboards-next
   description: ''
   elements:
+  - name: Sales Performance Image
+    type: text
+    body_text: "<img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9KXJCZqb1MYvRx7VLUR6OgLymuNX22aKLjl8AEr0cjkDfJtEW' alt='Sales Performance' width='100px' height='100px' />"
+    row: 0
+    col: 0
+    width: 10
+    height: 4
   - title: Account Receivable by Company
     name: Account Receivable by Company
     model: cortex_sap_operational
@@ -67,7 +74,7 @@
       Sold to Party: data_intelligence_ar.Sold_to_Party_Name
     row: 0
     col: 0
-    width: 17
+    width: 32
     height: 10
   - title: Accounts Receivable
     name: Accounts Receivable
@@ -105,35 +112,9 @@
       Sold to Party: data_intelligence_ar.Sold_to_Party_Name
     row: 10
     col: 0
-    width: 24
+    width: 30
     height: 10
-  - title: Total Receivable
-    name: Total Receivable
-    model: cortex_sap_operational
-    explore: data_intelligence_ar
-    type: single_value
-    fields: [data_intelligence_ar.Sum_of_Receivables]
-    filters: {}
-    limit: 500
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    value_format: ''
-    defaults_version: 1
-    listen:
-      Company: data_intelligence_ar.Company_Name
-      Currency: data_intelligence_ar.Currency_Required
-      Sold to Party: data_intelligence_ar.Sold_to_Party_Name
-    row: 0
-    col: 17
-    width: 7
-    height: 10
+
   - name: ''
     type: text
     title_text: ''
