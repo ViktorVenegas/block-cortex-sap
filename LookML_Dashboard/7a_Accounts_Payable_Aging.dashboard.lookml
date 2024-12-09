@@ -1,5 +1,5 @@
 - dashboard: sap_finance_ap_07_a_accounts_payable_aging
-  title: "Accounts Payable Aging"
+  title: "Cuentas por Pagar - Antiguedad de Saldos"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
