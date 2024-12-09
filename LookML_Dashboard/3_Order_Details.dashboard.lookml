@@ -5,6 +5,13 @@
   description: ''
   preferred_slug: GapLOzfEPZDaXx7TLctbOL
   elements:
+  - name: Sales Performance Image
+    type: text
+    body_text: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAos71B9SG5NokQUFGQgeK_wRcEr7lWiPCOlXh0BRQe9xVMhvU' alt='Sales Performance' width='100px' height='100px' />"
+    row: 0
+    col: 0
+    width: 10
+    height: 4
   - name: Order Details
     type: text
     title_text: Order Details
