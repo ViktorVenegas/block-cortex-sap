@@ -1,5 +1,5 @@
 - dashboard: sap_finance_sa_08_spend_analysis
-  title: "Spend Analysis"
+  title: "Análisis de Gasto"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
