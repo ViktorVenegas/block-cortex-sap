@@ -5,6 +5,16 @@
   description: ''
   preferred_slug: 7yeTGw3NJb448nhSCCGtGE
   elements:
+  - title: "Header Image"
+    name: header_image
+    type: text
+    title_text: ''
+    subtitle_text: ''
+    body_text: '<div><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcz8YmZrAteUbjkTIw7DIwEKfb3wc66BhaBoxvG5-9EqB6IVma" alt="Encabezado" style="width: 8%; max-height: 60px;"></div>'
+    row: 0
+    col: -1
+    width: 24
+    height: 2
   - name: Order Status Snapshot
     type: text
     title_text: Order Status Snapshot

@@ -7,8 +7,7 @@
   elements:
   - name: Sales Performance Image
     type: text
-    title_text: "<b>Imagen Representativa</b>"
-    body_text: "<img src='https://leadsbridge.com/wp-content/themes/leadsbridge/img/integration-lg-logos/logo1025.png' alt='Sales Performance' width='100px' height='100px' />"
+    body_text: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGfwZq_A70bgsI6cf47a7OeSrLQp7tMofcopShkwbuu-VqTEW3' alt='Sales Performance' width='100px' height='100px' />"
     row: 0
     col: 0
     width: 10

@@ -5,16 +5,6 @@
   description: ''
   preferred_slug: VMRXJW8ou8ax9tT9Eiuyof
   elements:
-  - title: "Header Image"
-    name: header_image
-    type: text
-    title_text: ''
-    subtitle_text: ''
-    body_text: '<div><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcz8YmZrAteUbjkTIw7DIwEKfb3wc66BhaBoxvG5-9EqB6IVma" alt="Encabezado" style="width: 8%; max-height: 60px;"></div>'
-    row: 0
-    col: -1
-    width: 24
-    height: 2
   - name: Customer focused Price Variations
     type: text
     title_text: Customer focused Price Variations

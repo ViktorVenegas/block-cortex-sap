@@ -5,6 +5,13 @@
   description: ''
   preferred_slug: 9XW5FidZo6dLdTLY0OJADx
   elements:
+  - name: Sales Performance Image
+    type: text
+    body_text: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGfwZq_A70bgsI6cf47a7OeSrLQp7tMofcopShkwbuu-VqTEW3' alt='Sales Performance' width='100px' height='100px' />"
+    row: 0
+    col: 0
+    width: 10
+    height: 4
   - title: Delivery Performance
     name: Delivery Performance
     model: cortex_sap_operational
