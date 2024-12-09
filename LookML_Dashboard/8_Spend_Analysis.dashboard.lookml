@@ -5,11 +5,17 @@
   description: ''
   preferred_slug: nduljjI5gByUjzwTT99hBL
   elements:
+  - name: Logo BAZ Image
+    type: text
+    body_text: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAos71B9SG5NokQUFGQgeK_wRcEr7lWiPCOlXh0BRQe9xVMhvU' alt='Sales Performance' width='140px' height='100px' />"
+    row: 0
+    col: 0
+    width: 5
+    height: 3
   - name: ''
     type: text
     title_text: ''
-    subtitle_text: <font color="#c1c1c1">What is my spend by organization, by group
-      and by month?</font>
+    subtitle_text: <font color="#c1c1c1">Cuál es el gasto por Sociedad, por Grupo y por mes?</font>
     body_text: ''
     row: 4
     col: 0
@@ -18,8 +24,7 @@
   - name: " (2)"
     type: text
     title_text: ''
-    subtitle_text: <font color="#c1c1c1">Where am I spending the most, with who and
-      for what?</font>
+    subtitle_text: <font color="#c1c1c1">En dónde estamos gastando más, con quien y porqué?</font>
     body_text: ''
     row: 10
     col: 0
@@ -27,8 +32,8 @@
     height: 1
   - name: Key Spend Analysis Indicators
     type: text
-    title_text: Key Spend Analysis Indicators
-    subtitle_text: <font color="#c1c1c1">What is my current vendor spend position?</font>
+    title_text: Indicadores clave de gasto
+    subtitle_text: <font color="#c1c1c1">Cuál es la posición actual del proveedor?</font>
     body_text: ''
     row: 0
     col: 0
@@ -99,8 +104,7 @@
     hidden_pivots: {}
     note_state: collapsed
     note_display: hover
-    note_text: Distribution of total spend by top vendors in the target currency during
-      the invoice date range selected
+    note_text: Distribución del total del gasto en los principales proveedores
     listen:
       Invoice Date: vendor_performance.Invoice_date_date
       Target Currency: vendor_performance.target_currency_tcurr
@@ -141,8 +145,7 @@
     y_axes: []
     note_state: collapsed
     note_display: hover
-    note_text: Total amount of all invoices cleared in the target currency during
-      the invoice date range selected
+    note_text: Monto total de facturas compensadas
     listen:
       Invoice Date: vendor_performance.Invoice_date_date
       Target Currency: vendor_performance.target_currency_tcurr
@@ -209,8 +212,7 @@
     y_axes: []
     note_state: collapsed
     note_display: hover
-    note_text: Count of vendors with invoices cleared during the invoice date range
-      selected
+    note_text: Cuenta de proveedores con facturas compensadas por rango de fechas
     listen:
       Invoice Date: vendor_performance.Invoice_date_date
       Target Currency: vendor_performance.target_currency_tcurr
@@ -254,7 +256,7 @@
     y_axes: []
     note_state: collapsed
     note_display: hover
-    note_text: Count of invoices cleared during the invoice date range selected
+    note_text: Número de facturas compensadas por rango de fechas
     listen:
       Invoice Date: vendor_performance.Invoice_date_date
       Target Currency: vendor_performance.target_currency_tcurr
@@ -293,8 +295,7 @@
     series_types: {}
     note_state: collapsed
     note_display: hover
-    note_text: Distribution of total spend by vendor country during the invoice date
-      range selected
+    note_text: Distribución por total de gasto por proveedor
     listen:
       Invoice Date: vendor_performance.Invoice_date_date
       Target Currency: vendor_performance.target_currency_tcurr
@@ -333,8 +334,7 @@
     y_axes: []
     note_state: collapsed
     note_display: hover
-    note_text: Distribution of total spend by purchasing organization during the invoice
-      date range selected
+    note_text: Distribución del total del gasto por organización de compras
     listen:
       Invoice Date: vendor_performance.Invoice_date_date
       Target Currency: vendor_performance.target_currency_tcurr
@@ -404,8 +404,7 @@
     defaults_version: 1
     note_state: collapsed
     note_display: hover
-    note_text: Total spend by top material types in the target currency during the
-      invoice date range selected
+    note_text: Total de gasto por material
     listen:
       Invoice Date: vendor_performance.Invoice_date_date
       Target Currency: vendor_performance.target_currency_tcurr
@@ -488,8 +487,7 @@
     hidden_fields: []
     note_state: collapsed
     note_display: hover
-    note_text: Total spend in the target currency by month during the invoice date
-      range selected
+    note_text: Total de gasto por moneda
     listen:
       Invoice Date: vendor_performance.Invoice_date_date
       Target Currency: vendor_performance.target_currency_tcurr
