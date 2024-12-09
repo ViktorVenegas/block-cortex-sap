@@ -5,6 +5,14 @@
   description: ''
   preferred_slug: X0NQylJJiHQYRvwwXnWsZn
   elements:
+  - name: Sales Performance Image
+    type: text
+    body_text: "<img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYapUpbACv_2ZDBvSpA3HLfBQgRZtHbSQ_VzLchcg16JiUWlki' alt='Sales Performance' width='100px' height='100px' />"
+    row: 0
+    col: 0
+    width: 10
+    height: 4
+
   - title: One Touch Order
     name: One Touch Order
     model: cortex_sap_operational
