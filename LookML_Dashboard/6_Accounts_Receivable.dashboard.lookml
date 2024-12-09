@@ -4,6 +4,13 @@
   preferred_viewer: dashboards-next
   description: ''
   elements:
+  - name: Sales Performance Image
+    type: text
+    body_text: "<img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcz8YmZrAteUbjkTIw7DIwEKfb3wc66BhaBoxvG5-9EqB6IVma' alt='Sales Performance' width='100px' height='100px' />"
+    row: 0
+    col: 0
+    width: 10
+    height: 4
   - title: Account Receivable by Company
     name: Account Receivable by Company
     model: cortex_sap_operational
@@ -606,74 +613,7 @@
     col: 12
     width: 12
     height: 2
-  - title: Current Date
-    name: Current Date
-    model: cortex_sap_operational
-    explore: data_intelligence_ar
-    type: single_value
-    fields: [data_intelligence_ar.Current_Date]
-    fill_fields: [data_intelligence_ar.Current_Date]
-    sorts: [data_intelligence_ar.Current_Date desc]
-    limit: 500
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: true
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    font_size_main: '10'
-    orientation: auto
-    style_data_intelligence_ar.Current_Date: "#3A4245"
-    show_title_data_intelligence_ar.Current_Date: true
-    title_placement_data_intelligence_ar.Current_Date: above
-    value_format_data_intelligence_ar.Current_Date: mm-dd-yyyy
-    single_value_title: ''
-    conditional_formatting: [{type: equal to, value: !!null '', background_color: "#1A73E8",
-        font_color: !!null '', color_application: {collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2,
-          palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab}, bold: false, italic: false,
-        strikethrough: false, fields: !!null ''}]
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: false
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    limit_displayed_rows: false
-    legend_position: center
-    point_style: none
-    show_value_labels: false
-    label_density: 25
-    x_axis_scale: auto
-    y_axis_combined: true
-    show_null_points: true
-    interpolation: linear
-    defaults_version: 1
-    series_types: {}
-    hidden_fields: []
-    hidden_points_if_no: []
-    series_labels: {}
-    listen:
-      DSO Period: data_intelligence_ar.Day_Sales_Outstanding
-      Currency: data_intelligence_ar.Currency_Required
-      Company: data_intelligence_ar.Company_Name
-      Overdue Receivable Interval: data_intelligence_ar.Aging_Interval
-      'Sold to Party ': data_intelligence_ar.Sold_to_Party_Name
-    row: 0
-    col: 19
-    width: 5
-    height: 2
+
   filters:
   - name: Company
     title: Company
