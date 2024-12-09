@@ -5,6 +5,13 @@
   description: ''
   preferred_slug: zW4D9AhK2n0Ufdpf6iXd9X
   elements:
+  - name: Sales Performance Image
+    type: text
+    body_text: "<img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpiIAKEZiUVNn0wBPy31pEUyOC8ShTxREUnZlcvHxCgS5rQw-b' alt='Sales Performance' width='100px' height='100px' />"
+    row: 0
+    col: 0
+    width: 10
+    height: 4
   - name: Key Accounts Payable Indicators
     type: text
     title_text: Key Accounts Payable Indicators
