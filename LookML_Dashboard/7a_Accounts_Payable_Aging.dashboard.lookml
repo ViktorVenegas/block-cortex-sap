@@ -7,7 +7,7 @@
   elements:
 
   - title: Accounts Payable Aging
-    name: Accounts Payable Aging
+    name: Antigüedad de saldos
     model: cortex_sap_operational
     explore: accounts_payable_v2
     type: looker_column
