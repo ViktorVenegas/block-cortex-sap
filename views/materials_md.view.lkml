@@ -10,6 +10,7 @@ view: materials_md {
   }
 
   measure: suma_de_cantidades {
+    label: "Suma de Cantidades"
     type: sum
     sql: ${cantidades} ;;
   }
