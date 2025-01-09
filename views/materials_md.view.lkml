@@ -1,15 +1,25 @@
 view: materials_md {
   sql_table_name: `@{GCP_PROJECT}.@{REPORTING_DATASET}.MaterialsMD`
     ;;
-  
+
   fields_hidden_by_default: yes
+
+  dimension: cantidades {
+    type: number
+    sql: ${TABLE}.Quantitynumberofgrgislipstobeprinted_Wesch ;;
+  }
+
+  measure: suma_de_cantidades {
+    type: sum
+    sql: ${cantidades} ;;
+  }
 
   dimension: key {
     type: string
     primary_key: yes
     sql: CONCAT(${client_mandt},${material_number_matnr},${language_spras});;
   }
-  
+
   dimension: acceptance_at_origin_weora {
     type: string
     sql: ${TABLE}.AcceptanceAtOrigin_WEORA ;;

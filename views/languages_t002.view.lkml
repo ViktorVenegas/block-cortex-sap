@@ -14,6 +14,7 @@ view: languages_t002 {
     sql: ${TABLE}.DegreeOfTranslationOfLanguage_LAHQ ;;
   }
 
+  #hola mundo
   dimension: language_key_spras {
     type: string
     primary_key: yes
