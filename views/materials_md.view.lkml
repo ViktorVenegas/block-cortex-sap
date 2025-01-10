@@ -4,15 +4,16 @@ view: materials_md {
 
   fields_hidden_by_default: yes
 
-  dimension: cantidades {
+   dimension: peso_neto {
     type: number
-    sql: ${TABLE}.Quantitynumberofgrgislipstobeprinted_Wesch ;;
+    sql:  nullif(${TABLE}.NetWeight_NTGEW, 0);;
+    hidden: no
   }
 
-  measure: suma_de_cantidades {
-    label: "Suma de Cantidades"
-    type: sum
-    sql: ${cantidades} ;;
+  measure: promedio_peso_neto {
+    type: average
+    sql: ${peso_neto} ;;
+    hidden: no
   }
 
   dimension: key {

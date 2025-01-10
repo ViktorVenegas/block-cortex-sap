@@ -7,6 +7,7 @@ include: "/components/*.lkml"
 include: "/explores_finance/*.explore"
 include: "/LookML_Dashboard/amount_invoice_us.dashboard"
 
+
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
 
@@ -47,6 +48,21 @@ sql_always_where: ${Client_ID} = "@{CLIENT}" ;;
     fields: [] #this view used for currency convesion only so no fields need to be included in the explore
   }
 }
+
+# Place in `cortex_sap_operational` model
+
+# explore: +sales_orders {
+#   aggregate_table: rollup__materials_v_md_material_number_matnr__materials_v_md_nombre_material {
+#     query: {
+#       dimensions: [materials_v_md.material_number_matnr, materials_v_md.nombre_material]
+#     }
+
+#     materialization: {
+#       datagroup_trigger: cortex_default_datagroup
+#     }
+#   }
+# }
+
 
 explore: sales_orders {
 
@@ -89,6 +105,14 @@ explore: sales_orders {
     sql_on: ${sales_orders.material_number_matnr}=${materials_md.material_number_matnr}
           and ${sales_orders.client_mandt}=${materials_md.client_mandt} and
           ${materials_md.language_spras}=${language_map.language_key};;
+  }
+
+  join: materials_v_md {
+    type: left_outer
+    relationship: one_to_many
+    sql_on: ${sales_orders.material_number_matnr}=${materials_v_md.material_number_matnr}
+          and ${sales_orders.client_mandt}=${materials_v_md.client_mandt} and
+          ${materials_v_md.language_spras}=${language_map.language_key};;
   }
 
   join: customers_md {
