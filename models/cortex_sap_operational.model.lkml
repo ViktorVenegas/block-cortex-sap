@@ -6,7 +6,7 @@ include: "/views/**/*.view"
 include: "/components/*.lkml"
 include: "/explores_finance/*.explore"
 include: "/LookML_Dashboard/amount_invoice_us.dashboard"
-include: "/LookML_Dashboard/4_Sales_Performance.dashboard"
+
 
 
 # Datagroups define a caching policy for an Explore. To learn more,
