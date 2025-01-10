@@ -983,6 +983,7 @@ view: sales_orders {
   dimension: net_price_netwr {
     type: number
     sql: ${TABLE}.NetPrice_NETWR ;;
+    hidden: no
   }
 
   dimension: net_price_target_currency_netpr {
@@ -2392,5 +2393,16 @@ view: sales_orders {
     sql: "Home" ;;
     html:<nav style="font-size: 20px; color: #4285F4"><a style="padding: 5px; float: center; line-height: 40px" href="/dashboards/cortex_sap_operational::sap_order_to_cash_o2c_05_billing_and_pricing?Region={{ _filters['countries_md.country_name_landx']| url_encode }}&Year={{ _filters['sales_orders.creation_date_erdat_date']| url_encode }}&Sales+Org={{ _filters['sales_organizations_md.sales_org_name_vtext']| url_encode }}&Distribution+Channel={{ _filters['distribution_channels_md.distribution_channel_name_vtext']| url_encode }}&Product={{ _filters['materials_md.material_text_maktx']| url_encode }}&Division={{ _filters['divisions_md.division_name_vtext']| url_encode }}&ampCurrency={{ _filters['currency_conversion_new.tcurr']| url_encode }}">{{value}}</a></nav>  ;;
   }
+
+
+  ############################ Dimensiones y metricas extras para pedido de ventas #############################
+  measure: total_netwr {
+    type: sum
+    # Es lo mismo que ${TABLE}.NetPrice_NETWR por que ya se declaro antes como dimension
+    sql: ${net_price_netwr};;
+    hidden: no
+  }
+
+  ##################################################### Blocked Orders #########################################
 
 }

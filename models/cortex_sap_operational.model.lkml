@@ -49,20 +49,6 @@ sql_always_where: ${Client_ID} = "@{CLIENT}" ;;
   }
 }
 
-# Place in `cortex_sap_operational` model
-
-# explore: +sales_orders {
-#   aggregate_table: rollup__materials_v_md_material_number_matnr__materials_v_md_nombre_material {
-#     query: {
-#       dimensions: [materials_v_md.material_number_matnr, materials_v_md.nombre_material]
-#     }
-
-#     materialization: {
-#       datagroup_trigger: cortex_default_datagroup
-#     }
-#   }
-# }
-
 
 explore: sales_orders {
 

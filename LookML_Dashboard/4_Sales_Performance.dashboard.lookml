@@ -556,3 +556,67 @@
     explore: sales_orders
     listens_to_filters: []
     field: materials_md.material_text_maktx
+  #nuevo look para el dashboard
+  - name: Top 3 Personal Care Products
+    title: Top 3 Personal Care Products
+    model: cortex_sap_operational
+    explore: sales_orders
+    type: looker_column
+    fields: [materials_v_md.nombre_material, sales_orders.sales_order_net_price_global_currency]
+    filters:
+      currency_conversion_new.tcurr: USD
+      materials_v_md.nombre1_jerarquia: Personal Care Products
+    sorts: [sales_orders.sales_order_net_price_global_currency desc 0]
+    limit: 500
+    column_limit: 50
+    x_axis_gridlines: true
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: true
+    legend_position: center
+    point_style: circle
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    color_application:
+      collection_id: 9d1da669-a6b4-4a4f-8519-3ea8723b79b5
+      palette_id: 0c5264fb-0681-4817-b9a5-d3c81002ce4c
+      options:
+        steps: 5
+    y_axes: [{label: '', orientation: left, series: [{axisId: sales_orders.sales_order_net_price_global_currency,
+            id: sales_orders.sales_order_net_price_global_currency, name: Sales Order
+              Net Price Global Currency}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: custom, tickDensityCustom: 38, type: linear}]
+    size_by_field: ''
+    x_axis_zoom: true
+    y_axis_zoom: true
+    limit_displayed_rows_values:
+      show_hide: show
+      first_last: first
+      num_rows: '3'
+    series_colors: {}
+    series_point_styles:
+      sales_orders.sales_order_net_price_global_currency: auto
+    reference_lines: [{reference_type: line, line_value: mean, range_start: max, range_end: min,
+        margin_top: deviation, margin_value: mean, margin_bottom: deviation, label_position: right,
+        color: "#000000", label: AVG Net Price Global}]
+    defaults_version: 1
+    hidden_pivots: {}

@@ -25,6 +25,7 @@ view: materials_v_md {
     type: string
     sql: ${TABLE}.material_name ;;
     hidden: no
+    drill_fields: [nombre_material]
   }
 
   dimension: nombre1_jerarquia {
@@ -32,4 +33,5 @@ view: materials_v_md {
     sql: ${TABLE}.product_hierarchy_name1 ;;
     hidden: no
   }
+
 }
