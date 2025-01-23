@@ -33,6 +33,10 @@ named_value_format: Greek_Number_Format {
   value_format: "[>=1000000000]0.0,,,\"B\";[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0.0"
 }
 
+named_value_format: testing_million_format {
+  value_format: "[>=1000000]0.00,, \"M\";0"
+}
+
 explore: data_intelligence_ar {
 sql_always_where: ${Client_ID} = "@{CLIENT}" ;;
   join: currency_conversion_new {
